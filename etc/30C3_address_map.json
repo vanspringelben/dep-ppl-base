@@ -1,0 +1,1575 @@
+[
+    {
+        "address": 12,
+        "numberOfRegisters": 1,
+        "name": "control.fault.reset",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1.0
+    },
+    {
+        "address": 15,
+        "numberOfRegisters": 1,
+        "name": "control.fault.acknowledge",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1.0
+    },
+    {
+        "address": 16,
+        "numberOfRegisters": 119,
+        "name": "measurements1",
+        "datatype": "int16",
+        "functionCode": 3,
+        "multiReadRegisters": ["fault.active.0", "fault.active.1", "fault.active.2", "fault.active.3", "fault.occurred.0", "fault.occurred.1","fault.occurred.2", "fault.occurred.3", 
+        "measure.watchdog", "measure.ports.port1.method", "measure.ports.port1.power.ramp", "measure.ports.port1.throttle", "measure.ports.port1.power.setpoint", "measure.ports.port1.power.reactive.setpoint", 
+        "measure.ports.port1.power.factor.setpoint", "measure.ports.port1.frequency.setpoint", "measure.ports.port1.reactive.compensation", "measure.ports.port1.frequency.offset", 
+        "measure.ports.port1.power.export.max", "measure.ports.port1.power.import.max", "measure.ports.port1.gridforming", "measure.ports.port1.current", "measure.ports.port1.voltage", 
+        "measure.ports.port2.method", "measure.ports.port2.throttle", "measure.ports.port2.current.setpoint", "measure.ports.port2.power.setpoint", "measure.ports.port2.voltage.setpoint"]
+    },
+    {     
+        "address": 141,
+        "numberOfRegisters": 118,
+        "name": "measurements2",
+        "datatype": "int16",
+        "functionCode": 3,      
+        "multiReadRegisters": ["measure.ports.port2.voltage.offset", "measure.ports.port2.power.import.max", "measure.ports.port2.power.export.max", "measure.ports.port3.method", "measure.ports.port3.throttle", 
+        "measure.ports.port3.current.setpoint", "measure.ports.port3.power.setpoint", "measure.ports.port3.voltage.setpoint", "measure.ports.port3.voltage.offset", "measure.ports.port3.power.import.max", 
+        "measure.ports.port3.power.export.max", "measure.ports.port3.mppt.restartTimer", "measure.reconnectTimer.0.setpoint", "measure.reconnectTimer.1.setpoint", "measure.reconnectTimer.2.setpoint"]
+    },
+    {     
+        "address": 266,
+        "numberOfRegisters": 47,
+        "name": "measurements3",
+        "datatype": "int16",
+        "functionCode": 3,
+        "multiReadRegisters": ["measure.mode", "measure.precharge.voltage.high", "measure.precharge.voltage.low", "measure.reconnectTimer.0", "measure.reconnectTimer.1", "measure.reconnectTimer.2"]
+    },
+    {     
+        "address": 834,
+        "numberOfRegisters": 46,
+        "name": "measurements4",
+        "datatype": "int16",
+        "functionCode": 3,
+        "multiReadRegisters": ["measure.ports.port1.frequency", "measure.ports.port1.voltage.ab", "measure.ports.port1.voltage.bc", "measure.ports.port1.voltage.ca", "measure.ports.port1.voltage.a",
+        "measure.ports.port1.voltage.b", "measure.ports.port1.voltage.c", "measure.ports.port1.current.a", "measure.ports.port1.current.b", "measure.ports.port1.current.c", "measure.ports.port1.power",
+        "measure.ports.port1.power.reactive", "measure.ports.port1.power.apparent", "measure.ports.port1.power.factor", "status.ports.port1", "measure.ports.port2.voltage", "measure.ports.port2.current",
+        "measure.ports.port2.power", "status.ports.port2", "measure.ports.port3.voltage", "measure.ports.port3.current", "measure.ports.port3.power", "status.ports.port3", "measure.temperature.filtered.onboard",
+        "measure.temperature.filtered.dc", "measure.temperature.filtered.ac", "measure.fan.pwm.setpoint", "measure.fan.tach", "measure.fan.status", "status.general", "measure.diagnostic.status", 
+        "measure.grid.support.status", "measure.grid.level.status", "measure.grid.stop.status", "measure.fault.id.last"]
+    },
+    {
+        "address": 16,
+        "numberOfRegisters": 1,
+        "name": "fault.active.0",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "GFDI fault",
+            "1": "IMI fault",
+            "2": "PM heatsink temp",
+            "3": "Control board temp",
+            "4": "24V undervoltage",
+            "5": "Ext fan lockd",
+            "6": "DC OV",
+            "7": "DC UV",
+            "8": "Link OV",
+            "9": "Link starve",
+            "10": "Link OI",
+            "11": "Link Prim Pos 1200V",
+            "12": "Link Prim Neg 1200V",
+            "13": "Link Sec Pos 1200V",
+            "14": "Link Sec Neg 1200V",
+            "15": "AC1 A-B Hard Sw Cond"
+        }
+    },
+    {
+        "address": 17,
+        "numberOfRegisters": 1,
+        "name": "fault.active.1",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "AC1 B-C Hard Sw Cond",
+            "1": "AC1 C-A Hard Sw Cond",
+            "2": "DC2 Hard Sw In Cond",
+            "3": "DC2 Hard Sw Out Cond",
+            "4": "DC3 Hard Sw In Cond",
+            "5": "DC3 Hard Sw Out Cond",
+            "6": "Link State Timeout",
+            "7": "Bad Link Start",
+            "8": "Control Method",
+            "9": "AC1 Island Detected",
+            "10": "AC1 UV1",
+            "11": "AC1 UV2",
+            "12": "AC1 UV3",
+            "13": "AC1 UV4",
+            "14": "AC1 OV1",
+            "15": "AC1 OV2"
+        }
+    },
+    {
+        "address": 18,
+        "numberOfRegisters": 1,
+        "name": "fault.active.2",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "AC1 OV3",
+            "1": "AC1 OV4",
+            "2": "AC1 UF1",
+            "3": "AC1 UF2",
+            "4": "AC1 UF3",
+            "5": "AC1 UF4",
+            "6": "AC1 OF1",
+            "7": "AC1 OF2",
+            "8": "AC1 OF3",
+            "9": "AC1 OF4",
+            "10": "Watchdog",
+            "11": "E-Stop",
+            "12": "Sense Diagnostic",
+            "13": "Arc Fault",
+            "14": "Comms Proc Shutdown",
+            "15": "AC1 Surge Detected"
+        }
+    },
+    {
+        "address": 19,
+        "numberOfRegisters": 1,
+        "name": "fault.active.3",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "Link AC Switch Breakdown",
+            "1": "Link DC Switch Breakdown",
+            "2": "Precharge Timeout",
+            "3": "Link AC High Voltage",
+            "4": "AC L-L Over Voltage",
+            "5": "Licensing",
+            "6": "Grid-ACK Timeout",
+            "7": "Bad Link Pulse",
+            "8": "Conduction Fault",
+            "9": "AC L-G Over Voltage",
+            "10": "Snapshot Capture Note",
+            "11": "Grid Form Rotation Fault",
+            "12": "",
+            "13": "",
+            "14": "",
+            "15": ""
+        }
+    },
+    {
+        "address": 24,
+        "numberOfRegisters": 1,
+        "name": "fault.occurred.0",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "GFDI fault",
+            "1": "IMI fault",
+            "2": "PM heatsink temp",
+            "3": "Control board temp",
+            "4": "24V undervoltage",
+            "5": "Ext fan lockd",
+            "6": "DC OV",
+            "7": "DC UV",
+            "8": "Link OV",
+            "9": "Link starve",
+            "10": "Link OI",
+            "11": "Link Prim Pos 1200V",
+            "12": "Link Prim Neg 1200V",
+            "13": "Link Sec Pos 1200V",
+            "14": "Link Sec Neg 1200V",
+            "15": "AC1 A-B Hard Sw Cond"
+        }
+    },
+    {
+        "address": 25,
+        "numberOfRegisters": 1,
+        "name": "fault.occurred.1",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "AC1 B-C Hard Sw Cond",
+            "1": "AC1 C-A Hard Sw Cond",
+            "2": "DC2 Hard Sw In Cond",
+            "3": "DC2 Hard Sw Out Cond",
+            "4": "DC3 Hard Sw In Cond",
+            "5": "DC3 Hard Sw Out Cond",
+            "6": "Link State Timeout",
+            "7": "Bad Link Start",
+            "8": "Control Method",
+            "9": "AC1 Island Detected",
+            "10": "AC1 UV1",
+            "11": "AC1 UV2",
+            "12": "AC1 UV3",
+            "13": "AC1 UV4",
+            "14": "AC1 OV1",
+            "15": "AC1 OV2"
+        }
+    },
+    {
+        "address": 26,
+        "numberOfRegisters": 1,
+        "name": "fault.occurred.2",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "AC1 OV3",
+            "1": "AC1 OV4",
+            "2": "AC1 UF1",
+            "3": "AC1 UF2",
+            "4": "AC1 UF3",
+            "5": "AC1 UF4",
+            "6": "AC1 OF1",
+            "7": "AC1 OF2",
+            "8": "AC1 OF3",
+            "9": "AC1 OF4",
+            "10": "Watchdog",
+            "11": "E-Stop",
+            "12": "Sense Diagnostic",
+            "13": "Arc Fault",
+            "14": "Comms Proc Shutdown",
+            "15": "AC1 Surge Detected"
+        }
+    },
+    {
+        "address": 27,
+        "numberOfRegisters": 1,
+        "name": "fault.occurred.3",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "Link AC Switch Breakdown",
+            "1": "Link DC Switch Breakdown",
+            "2": "Precharge Timeout",
+            "3": "Link AC High Voltage",
+            "4": "AC L-L Over Voltage",
+            "5": "Licensing",
+            "6": "Grid-ACK Timeout",
+            "7": "Bad Link Pulse",
+            "8": "Conduction Fault",
+            "9": "AC L-G Over Voltage",
+            "10": "Snapshot Capture Note",
+            "11": "Grid Form Rotation Fault",
+            "12": "",
+            "13": "",
+            "14": "",
+            "15": ""
+        }
+    },
+    {
+        "address": 40,
+        "numberOfRegisters": 1,
+        "name": "control.watchdog",
+        "datatype": "int16",
+        "functionCode": 6
+    },
+    {
+        "address": 40,
+        "numberOfRegisters": 1,
+        "name": "measure.watchdog",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 65,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.method",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "0": "idle",
+            "1": "net",
+            "1026": "GPWR",
+            "1282": "FPWR"
+        }
+    },
+    {
+        "address": 65,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.method",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "idle",
+            "1": "net",
+            "1026": "GPWR",
+            "1282": "FPWR"
+        }
+    },
+    {
+        "address": 66,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.power.ramp",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "scaling": 0.1,
+        "offset": 0.0,
+        "minimum": 1.0,
+        "maximum": 6000.0
+    },
+    {
+        "address": 66,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.ramp",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 67,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.throttle",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "0": "dc2",
+            "1": "dc3"
+        }
+    },
+    {
+        "address": 67,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.throttle",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "dc2",
+            "1": "dc3"
+        }
+    },
+    {
+        "address": 68,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.power",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": -0.1,
+        "offset": 0.0,
+        "minimum": -3200.0,
+        "maximum": 3200.0
+    },
+    {
+        "address": 68,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.setpoint",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 69,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.power.reactive",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": -0.1,
+        "offset": 0.0,
+        "minimum": -2150.0,
+        "maximum": 2150.0
+    },
+    {
+        "address": 69,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.reactive.setpoint",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 70,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.factor.setpoint",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 0.01,
+        "offset": 0.0
+    },
+    {
+        "address": 72,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.frequency",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "scaling": 1000.0,
+        "offset": 0.0,
+        "minimum": 45000.0,
+        "maximum": 65000.0
+    },
+    {
+        "address": 72,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.frequency.setpoint",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 0.001,
+        "offset": 0.0
+    },
+    {
+        "address": 74,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.reactive.compensation",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "0": "enable",
+            "1": "disable"
+        }
+    },
+    {
+        "address": 74,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.reactive.compensation",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "enable",
+            "1": "disable"
+        }
+    },
+    {
+        "address": 79,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.frequency.offset",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": 1000.0,
+        "offset": 0.0,
+        "minimum": 1000.0,
+        "maximum": -1000.0
+    },
+    {
+        "address": 79,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.frequency.offset",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 0.001,
+        "offset": 0.0
+    },
+    {
+        "address": 89,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.power.export.max",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "scaling": -0.1,
+        "offset": 0.0,
+        "minimum": 0.0,
+        "maximum": 3200.0
+    },
+    {
+        "address": 89,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.export.max",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 93,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.power.import.max",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": -0.1,
+        "offset": 0.0,
+        "minimum": -3200.0,
+        "maximum": 0.0
+    },
+    {
+        "address": 93,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.import.max",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 95,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.gridforming",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "SEL547 intercon enable",
+            "1": "grid_n",
+            "2": "grid_ack_n",
+            "3": "fast ack",
+            "4": "disable form standby",
+            "5": "disable follow standby",
+            "6": "no grid_ack_n",
+            "7": "no sudden loss/fast-idle",
+            "8": "enable super-droop",
+            "9": "enable voltage-balancing"
+        }
+    },
+    {
+        "address": 104,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.current",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -0.1,
+        "offset": 0.0
+    },
+    {
+        "address": 109,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.voltage",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 129,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.method",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "0": "idle",
+            "1": "net",
+            "2": "MPPT",
+            "769": "constant-current",
+            "1025": "constant-power",
+            "1281": "constant-voltage",
+            "1793": "voltage-droop"
+        }
+    },
+    {
+        "address": 129,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.method",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "idle",
+            "1": "net",
+            "2": "MPPT",
+            "769": "constant-current",
+            "1025": "constant-power",
+            "1281": "constant-voltage",
+            "1793": "voltage-droop"
+        }
+    },
+    {
+        "address": 131,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.throttle",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "0": "dc3",
+            "1": "ac1"
+        }
+    },
+    {
+        "address": 131,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.throttle",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "dc3",
+            "1": "ac1"
+        }
+    },
+    {
+        "address": 132,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.current",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": -10.0,
+        "offset": 0.0,
+        "minimum": -640.0,
+        "maximum": 640.0
+    },
+    {
+        "address": 132,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.current.setpoint",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -0.1,
+        "offset": 0.0
+    },
+    {
+        "address": 133,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.power",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": -0.1,
+        "offset": 0.0,
+        "minimum": -3200.0,
+        "maximum": 3200.0
+    },
+    {
+        "address": 133,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.power.setpoint",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 134,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.voltage",
+        "datatype": "int16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1000.0
+    },
+    {
+        "address": 134,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.voltage.setpoint",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 141,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.voltage.max",
+        "datatype": "int16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1000.0
+    },
+    {
+        "address": 142,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.voltage.min",
+        "datatype": "int16",
+        "functionCode": 6,
+        "minimum": -50.0,
+        "maximum": 1000.0
+    },
+    {
+        "address": 144,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.power.ramp",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "scaling": 0.1,
+        "offset": 0.0,
+        "minimum": 1.0,
+        "maximum": 6000.0
+    },
+    {
+        "address": 146,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.voltage.offset",
+        "datatype": "int16",
+        "functionCode": 6,
+        "minimum": -250.0,
+        "maximum": 250.0
+    },
+    {
+        "address": 146,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.voltage.offset",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 147,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.mppt.ramp",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 1.0,
+        "maximum": 100.0
+    },
+    {
+        "address": 152,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.power.import.max",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": -0.1,
+        "offset": 0.0,
+        "minimum": -3200.0,
+        "maximum": 0.0
+    },
+    {
+        "address": 152,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.power.import.max",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 153,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.power.export.max",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "scaling": -0.1,
+        "offset": 0.0,
+        "minimum": 0.0,
+        "maximum": 3200.0
+    },
+    {
+        "address": 153,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.power.export.max",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 154,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.current.max",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": 10.0,
+        "offset": 0.0,
+        "minimum": 0.0,
+        "maximum": 640.0
+    },
+    {
+        "address": 159,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port2.mppt",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1.0
+    },
+    {
+        "address": 193,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.method",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "0": "idle",
+            "1": "net",
+            "2": "MPPT",
+            "769": "constant-current",
+            "1025": "constant-power",
+            "1281": "constant-voltage",
+            "1793": "voltage-droop"
+        }
+    },
+    {
+        "address": 193,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.method",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "idle",
+            "1": "net",
+            "2": "MPPT",
+            "769": "constant-current",
+            "1025": "constant-power",
+            "1281": "constant-voltage",
+            "1793": "voltage-droop"
+        }
+    },
+    {
+        "address": 195,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.throttle",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "0": "dc2",
+            "1": "ac1"
+        }
+    },
+    {
+        "address": 195,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.throttle",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "dc2",
+            "1": "ac1"
+        }
+    },
+    {
+        "address": 196,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.current",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": -10.0,
+        "offset": 0.0,
+        "minimum": -640.0,
+        "maximum": 640.0
+    },
+    {
+        "address": 196,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.current.setpoint",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -0.1,
+        "offset": 0.0
+    },
+    {
+        "address": 197,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.power",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": -0.1,
+        "offset": 0.0,
+        "minimum": -3200.0,
+        "maximum": 3200.0
+    },
+    {
+        "address": 197,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.power.setpoint",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 198,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.voltage",
+        "datatype": "int16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1000.0
+    },
+    {
+        "address": 198,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.voltage.setpoint",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 205,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.voltage.max",
+        "datatype": "int16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1000.0
+    },
+    {
+        "address": 206,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.voltage.min",
+        "datatype": "int16",
+        "functionCode": 6,
+        "minimum": -50.0,
+        "maximum": 1000.0
+    },
+    {
+        "address": 208,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.power.ramp",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "scaling": 0.1,
+        "offset": 0.0,
+        "minimum": 1.0,
+        "maximum": 6000.0
+    },
+    {
+        "address": 210,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.voltage.offset",
+        "datatype": "int16",
+        "functionCode": 6,
+        "minimum": -250.0,
+        "maximum": 250.0
+    },
+    {
+        "address": 210,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.voltage.offset",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 211,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.mppt.ramp",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 1.0,
+        "maximum": 100.0
+    },
+    {
+        "address": 216,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.power.import.max",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": -0.1,
+        "offset": 0.0,
+        "minimum": -3200.0,
+        "maximum": 0.0
+    },
+    {
+        "address": 216,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.power.import.max",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 217,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.power.export.max",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "scaling": -0.1,
+        "offset": 0.0,
+        "minimum": 0.0,
+        "maximum": 3200.0
+    },
+    {
+        "address": 217,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.power.export.max",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 218,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.current.max",
+        "datatype": "int16",
+        "functionCode": 6,
+        "scaling": 10.0,
+        "offset": 0.0,
+        "minimum": 0.0,
+        "maximum": 640.0
+    },
+    {
+        "address": 223,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port3.mppt",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1.0
+    },
+    {
+        "address": 232,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.mppt.restartTimer",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 256,
+        "numberOfRegisters": 1,
+        "name": "control.reconnectTimer.0",
+        "datatype": "uint16",
+        "functionCode": 6
+    },
+    {
+        "address": 256,
+        "numberOfRegisters": 1,
+        "name": "measure.reconnectTimer.0.setpoint",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 257,
+        "numberOfRegisters": 1,
+        "name": "control.reconnectTimer.1",
+        "datatype": "uint16",
+        "functionCode": 6
+    },
+    {
+        "address": 257,
+        "numberOfRegisters": 1,
+        "name": "measure.reconnectTimer.1.setpoint",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 258,
+        "numberOfRegisters": 1,
+        "name": "control.reconnectTimer.2",
+        "datatype": "uint16",
+        "functionCode": 6
+    },
+    {
+        "address": 258,
+        "numberOfRegisters": 1,
+        "name": "measure.reconnectTimer.2.setpoint",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 263,
+        "numberOfRegisters": 1,
+        "name": "control.enable",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1.0
+    },
+    {
+        "address": 264,
+        "numberOfRegisters": 1,
+        "name": "control.disable",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1.0
+    },
+    {
+        "address": 267,
+        "numberOfRegisters": 1,
+        "name": "control.mode",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "0": "manual",
+            "1": "auto"
+        }
+    },
+    {
+        "address": 267,
+        "numberOfRegisters": 1,
+        "name": "measure.mode",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "manual",
+            "1": "auto"
+        }
+    },
+    {
+        "address": 267,
+        "numberOfRegisters": 1,
+        "name": "communicationCheck",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 275,
+        "numberOfRegisters": 1,
+        "name": "control.precharge",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "1": "start",
+            "2": "stop"
+        }
+    },
+    {
+        "address": 276,
+        "numberOfRegisters": 1,
+        "name": "control.precharge.voltage.high",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1000.0
+    },
+    {
+        "address": 276,
+        "numberOfRegisters": 1,
+        "name": "measure.precharge.voltage.high",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "minimum": 0.0,
+        "maximum": 1000.0
+    },
+    {
+        "address": 277,
+        "numberOfRegisters": 1,
+        "name": "control.precharge.voltage.low",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1000.0
+    },
+    {
+        "address": 277,
+        "numberOfRegisters": 1,
+        "name": "measure.precharge.voltage.low",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "minimum": 0.0,
+        "maximum": 1000.0
+    },
+    {
+        "address": 288,
+        "numberOfRegisters": 1,
+        "name": "measure.reconnectTimer.0",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 289,
+        "numberOfRegisters": 1,
+        "name": "measure.reconnectTimer.1",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 290,
+        "numberOfRegisters": 1,
+        "name": "measure.reconnectTimer.2",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 834,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.frequency",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 0.001,
+        "offset": 0.0
+    },
+    {
+        "address": 835,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.voltage.ab",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 836,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.voltage.bc",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 837,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.voltage.ca",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 838,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.voltage.a",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 839,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.voltage.b",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 840,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.voltage.c",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 841,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.current.a",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -0.1,
+        "offset": 0.0
+    },
+    {
+        "address": 842,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.current.b",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -0.1,
+        "offset": 0.0
+    },
+    {
+        "address": 843,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.current.c",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -0.1,
+        "offset": 0.0
+    },
+    {
+        "address": 844,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 845,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.reactive",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 846,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.apparent",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 847,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.factor",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 0.01,
+        "offset": 0.0
+    },
+    {
+        "address": 848,
+        "numberOfRegisters": 1,
+        "name": "status.ports.port1",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "ac1 follow power limiting",
+            "1": "ac1 current limiting",
+            "2": "ac1 follow react limiting",
+            "3": "ac1 thermal derating",
+            "4": "ac1 apparent limiting",
+            "5": "ac1 forming power limiting",
+            "6": "throttling DC2",
+            "7": "throttling DC3",
+            "8": "seamless enabled",
+            "9": "islanded",
+            "10": "acknowledge",
+            "11": "ac voltage nominal",
+            "12": "grid-forming",
+            "13": "FPWR standby",
+            "14": "FPWR trips enabled",
+            "15": "ac1 port active"
+        }
+    },
+    {
+        "address": 849,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.voltage",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 850,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.current",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -0.1,
+        "offset": 0.0
+    },
+    {
+        "address": 851,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port2.power",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 852,
+        "numberOfRegisters": 1,
+        "name": "status.ports.port2",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "dc2 power limiting",
+            "1": "dc2 current limiting",
+            "3": "dc2 thermal derating",
+            "6": "throttling AC1",
+            "7": "throttling DC3"
+        }
+    },
+    {
+        "address": 853,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.voltage",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 854,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.current",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -0.1,
+        "offset": 0.0
+    },
+    {
+        "address": 855,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port3.power",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": -10.0,
+        "offset": 0.0
+    },
+    {
+        "address": 856,
+        "numberOfRegisters": 1,
+        "name": "status.ports.port3",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "dc3 power limiting",
+            "1": "dc3 current limiting",
+            "3": "dc3 thermal derating",
+            "6": "throttling AC1",
+            "7": "throttling DC2"
+        }
+    },
+    {
+        "address": 863,
+        "numberOfRegisters": 1,
+        "name": "measure.temperature.filtered.onboard",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 0.125,
+        "offset": 0.0
+    },
+    {
+        "address": 864,
+        "numberOfRegisters": 1,
+        "name": "measure.temperature.filtered.dc",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 0.125,
+        "offset": 0.0
+    },
+    {
+        "address": 865,
+        "numberOfRegisters": 1,
+        "name": "measure.temperature.filtered.ac",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 0.125,
+        "offset": 0.0
+    },
+    {
+        "address": 867,
+        "numberOfRegisters": 1,
+        "name": "measure.fan.pwm.setpoint",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 868,
+        "numberOfRegisters": 1,
+        "name": "measure.fan.tach",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 869,
+        "numberOfRegisters": 1,
+        "name": "measure.fan.status",
+        "datatype": "int16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "fan 1 locked",
+            "1": "fan 2 locked",
+            "2": "fan 3 locked",
+            "3": "fan 4 locked",
+            "8": "fan 1 on",
+            "9": "fan 2 on",
+            "10": "fan 3 on",
+            "11": "fan 4 on"
+        }
+    },
+    {
+        "address": 873,
+        "numberOfRegisters": 1,
+        "name": "status.general",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "PCS in self-test mode",
+            "1": "PCS reconnect timer 0 counting down from last disconnect due to ABORT-0 fault",
+            "2": "PCS reconnect timer 0 counting down from last disconnect due to ABORT-1 fault",
+            "3": "PCS reconnect timer 0 counting down from last disconnect due to ABORT-2 fault",
+            "4": "PCS DC2 port pre-charge operation is active",
+            "5": "Invalid control method programmed in PCS",
+            "6": "AC rotation is C-B-A",
+            "7": "PV/MPPT is enabled",
+            "8": "PV/MPPT is enabled",
+            "9": "Power conversion is active",
+            "10": "Power conversion disabled",
+            "11": "PCS lockdown is active",
+            "12": "Fault of severity ABORT-0",
+            "13": "Fault of severity ABORT-1",
+            "14": "Fault of severity ABORT-2",
+            "15": "GFDI or IMI fault"
+        }
+    },
+    {
+        "address": 874,
+        "numberOfRegisters": 1,
+        "name": "measure.diagnostic.status",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "Fault has occurred since last power-up/global-fault-reset",
+            "1": "AFCI alarm is active",
+            "2": "GFDI fault is active",
+            "3": "Self-test in progress or self-test failed",
+            "4": "Self-test failed",
+            "5": "Global HW shutdown is active",
+            "6": "Sense PLL is locked",
+            "7": "Abort fault, lockdown fault, or user-ack fault is active",
+            "8": "IMI fault is active",
+            "9": "System is reconnecting from most recent abort-fault clear",
+            "10": "PCS is converting power",
+            "11": "User-ack fault is active",
+            "12": "Abort fault is active",
+            "13": "Lockdown fault is active",
+            "14": "E-stop shutdown is active",
+            "15": "System under-voltage fault is active"
+        }
+    },
+    {
+        "address": 876,
+        "numberOfRegisters": 1,
+        "name": "measure.grid.support.status",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "Reactive control enabled",
+            "1": "Constant-Q control enabled",
+            "2": "Constant-PF active",
+            "3": "Volt-VAR active",
+            "4": "Freq-Watt active",
+            "5": "Volt-Watt active"
+        }
+    },
+    {
+        "address": 877,
+        "numberOfRegisters": 1,
+        "name": "measure.grid.level.status",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "In LV1",
+            "1": "In LV2",
+            "2": "In LV3",
+            "3": "In LV4",
+            "4": "In HV1",
+            "5": "In HV2",
+            "6": "In HV3",
+            "7": "In HV4",
+            "8": "In LF1",
+            "9": "In LF2",
+            "10": "In LF3",
+            "11": "In LF4",
+            "12": "In HF1",
+            "13": "In HF2",
+            "14": "In HF3",
+            "15": "In HF4"
+        }
+    },
+    {
+        "address": 878,
+        "numberOfRegisters": 1,
+        "name": "measure.grid.stop.status",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "Cessation LV1",
+            "1": "Cessation LV2",
+            "2": "Cessation LV3",
+            "3": "Cessation LV4",
+            "4": "Cessation HV1",
+            "5": "Cessation HV2",
+            "6": "Cessation HV3",
+            "7": "Cessation HV4",
+            "8": "Cessation LF1",
+            "9": "Cessation LF2",
+            "10": "Cessation LF3",
+            "11": "Cessation LF4",
+            "12": "Cessation HF1",
+            "13": "Cessation HF2",
+            "14": "Cessation HF3",
+            "15": "Cessation HF4"
+        }
+    },
+    {
+        "address": 879,
+        "numberOfRegisters": 1,
+        "name": "measure.fault.id.last",
+        "datatype": "int16",
+        "functionCode": 3
+    }
+]

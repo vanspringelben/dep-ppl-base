@@ -1,0 +1,1106 @@
+[
+    {        
+        "name": "measurements1",
+        "datatype": "int16",
+        "functionCode": 3,
+        "numberOfRegisters": 125,
+        "address": 40073,
+        "multiReadRegisters": ["measure.ports.port1.charge.capacity", "measure.ports.port1.energy.capacity", "measure.ports.port1.power.charge.max.rated", "measure.ports.port1.power.discharge.max.rated", "measure.ports.port1.power.discharge.self", 
+        "measure.ports.port1.soc.max", "measure.ports.port1.soc.min", "measure.ports.port1.soc.max.reserve", "measure.ports.port1.soc.min.reserve", "measure.ports.port1.soc", "measure.ports.port1.dod", "measure.ports.port1.soh", "measure.cycles.count", 
+        "measure.charge.status", "measure.mode", "measure.heartbeat", "measure.battery.type", "measure.status", "measure.status.vendor", "measure.event1", "measure.event2", "measure.event1.vendor", "measure.event2.vendor", "measure.ports.port1.voltage", 
+        "measure.ports.port1.voltage.max", "measure.ports.port1.voltage.min", "measure.voltage.cell.max", "measure.voltage.cell.max.string", "measure.voltage.cell.max.module", "measure.voltage.cell.min", "measure.voltage.cell.min.string", 
+        "measure.voltage.cell.min.module", "measure.voltage.cell.average", "measure.ports.port1.current", "measure.ports.port1.current.charge.max", "measure.ports.port1.current.discharge.max", "measure.ports.port1.power", "measure.request.inverter", 
+        "measure.ports.port1.power.setpoint", "measure.ports.port1.contactor", "measure.state.inverter", "measure.ports.port1.charge.capacity.SF", "measure.ports.port1.energy.capacity.SF", "measure.ports.port1.power.max.SF", "measure.ports.port1.power.discharge.self.SF", 
+        "measure.ports.port1.soc.SF", "measure.ports.port1.dod.SF", "measure.ports.port1.soh.SF", "measure.voltage.SF", "measure.voltage.cell.SF", "measure.ports.port1.current.SF", "measure.ports.port1.current.max.SF", "measure.ports.port1.power.SF",
+        "measure.ports.port1.strings", "measure.ports.port1.strings.active", "measure.ports.port1.temperature.max", "measure.ports.port1.temperature.max.string", "measure.ports.port1.temperature.max.module", "measure.ports.port1.temperature.min", 
+        "measure.ports.port1.temperature.min.string", "measure.ports.port1.temperature.min.module", "measure.ports.port1.temperature", "measure.string.voltage.max", "measure.string.voltage.max.string", "measure.string.voltage.min", "measure.string.voltage.min.string", 
+        "measure.string.voltage.average", "measure.string.current.max", "measure.string.current.max.string", "measure.string.current.min", "measure.string.current.min.string", "measure.string.current.average", "measure.count.cells.balancing", "measure.temperature.SF", 
+        "measure.string.current.SF", "measure.string.soh.SF", "measure.string.soc.SF", "measure.string.voltage.SF", "measure.string1.modules.count", "measure.string1.status", "measure.string1.failure", "measure.string1.soc", "measure.string1.soh", 
+        "measure.string1.current", "measure.string1.voltage.cell.max", "measure.string1.voltage.cell.max.module", "measure.string1.voltage.cell.min", "measure.string1.voltage.cell.min.module", "measure.string1.voltage", "measure.string1.temperature.max", 
+        "measure.string1.temperature.max.module", "measure.string1.temperature.min", "measure.string1.temperature.min.module", "measure.string1.temperature", "measure.string1.disabled", "measure.string1.contactor", "measure.string1.event1", "measure.string1.event2", 
+        "measure.string1.event1.vendor", "measure.string1.event2.vendor", "measure.string1.mode", "measure.string1.contactor.setpoint", "measure.string1.pad1", "measure.string1.pad2", "measure.ports.port1.power.charge.max", "measure.ports.port1.power.discharge.max",
+        "system.alarms", "system.warnings", "warning.charge.full", "warning.discharge.empty", "warning.stop.charge.discharge"]
+    },
+    {
+        "address": 40073,
+        "numberOfRegisters": 1,
+        "name": "communicationCheck",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40073,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.charge.capacity",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40074,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.energy.capacity",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40075,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.charge.max.rated",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40076,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.discharge.max.rated",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40077,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.discharge.self",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40078,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.soc.max",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40079,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.soc.min",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40080,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.soc.max.reserve",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "scaling": 1.0
+    },
+    {
+        "address": 40080,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.soc.max.reserve",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40081,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.soc.min.reserve",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "scaling": 1.0
+    },
+    {
+        "address": 40081,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.soc.min.reserve",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40082,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.soc",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40083,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.dod",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40084,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.soh",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40085,
+        "numberOfRegisters": 2,
+        "name": "measure.cycles.count",
+        "datatype": "uint32",
+        "functionCode": 3
+    },
+    {
+        "address": 40087,
+        "numberOfRegisters": 1,
+        "name": "measure.charge.status",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "1": "Off",
+            "2": "Emtpy",
+            "3": "Discharging",
+            "4": "Charging",
+            "5": "Full",
+            "6": "Holding",
+            "7": "Testing",
+            "default": "Unknown"
+        }
+    },
+    {
+        "address": 40088,
+        "numberOfRegisters": 1,
+        "name": "measure.mode",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "remote",
+            "1": "local"
+        }
+    },
+    {
+        "address": 40089,
+        "numberOfRegisters": 1,
+        "name": "measure.heartbeat",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40090,
+        "numberOfRegisters": 1,
+        "name": "control.heartbeat",
+        "datatype": "uint16",
+        "functionCode": 6
+    },
+    {
+        "address": 40091,
+        "numberOfRegisters": 1,
+        "name": "control.reset",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "minimum": 0.0,
+        "maximum": 1.0
+    },
+    {
+        "address": 40092,
+        "numberOfRegisters": 1,
+        "name": "measure.battery.type",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "Unknown",
+            "1": "Lead-acic",
+            "2": "Nickel-methal hydrate",
+            "3": "Nickel-cadmium",
+            "4": "Lithium-ion",
+            "5": "Carbon-zinc",
+            "6": "Zinc chloride",
+            "7": "Alkaline",
+            "8": "Rechargable alkaline",
+            "9": "Sodium-sulfur",
+            "10": "Flow",
+            "99": "Other"
+        }
+    },
+    {
+        "address": 40093,
+        "numberOfRegisters": 1,
+        "name": "measure.status",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "1": "Disconnected",
+            "2": "Initializing",
+            "3": "Connected",
+            "4": "Standby",
+            "5": "SOC Protection",
+            "6": "Suspending",
+            "99": "Fault",
+            "default": "Unknown"
+        }
+    },
+    {
+        "address": 40094,
+        "numberOfRegisters": 1,
+        "name": "measure.status.vendor",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40097,
+        "numberOfRegisters": 2,
+        "name": "measure.event1",
+        "datatype": "uint32",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "Communication alarm",
+            "1": "Over temp alarm",
+            "2": "Over temp warning",
+            "3": "Under temp alarm",
+            "4": "Under temp warning",
+            "5": "Over charge current alarm",
+            "6": "Over charge current warning",
+            "7": "Over discharge current alarm",
+            "8": "Over discharge current warning",
+            "9": "Over voltage alarm",
+            "10": "Over voltage warning",
+            "11": "Under voltage alarm",
+            "12": "Under voltage warning",
+            "13": "Under SOC min alarm",
+            "14": "Under SOC min warning",
+            "15": "Over SOC max alarm",
+            "16": "Over SOC max warning",
+            "17": "Voltage imbalance warning",
+            "18": "Temp imbalance alarm",
+            "19": "Temp imbalance warning",
+            "20": "Contactor alarm",
+            "21": "Fan alarm",
+            "22": "Ground fault",
+            "23": "Open door alarm",
+            "24": "Current imbalance warning",
+            "25": "Other alarm",
+            "26": "Other warning",
+            "27": "Reserved",
+            "28": "Config alarm",
+            "29": "Config warning"
+        }
+    },
+    {
+        "address": 40099,
+        "numberOfRegisters": 2,
+        "name": "measure.event2",
+        "datatype": "uint32",
+        "functionCode": 3
+    },
+    {
+        "address": 40101,
+        "numberOfRegisters": 2,
+        "name": "measure.event1.vendor",
+        "datatype": "uint32",
+        "functionCode": 3
+    },
+    {
+        "address": 40103,
+        "numberOfRegisters": 2,
+        "name": "measure.event2.vendor",
+        "datatype": "uint32",
+        "functionCode": 3
+    },
+    {
+        "address": 40105,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.voltage",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40106,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.voltage.max",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40107,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.voltage.min",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40108,
+        "numberOfRegisters": 1,
+        "name": "measure.voltage.cell.max",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40109,
+        "numberOfRegisters": 1,
+        "name": "measure.voltage.cell.max.string",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40110,
+        "numberOfRegisters": 1,
+        "name": "measure.voltage.cell.max.module",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40111,
+        "numberOfRegisters": 1,
+        "name": "measure.voltage.cell.min",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40112,
+        "numberOfRegisters": 1,
+        "name": "measure.voltage.cell.min.string",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40113,
+        "numberOfRegisters": 1,
+        "name": "measure.voltage.cell.min.module",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40114,
+        "numberOfRegisters": 1,
+        "name": "measure.voltage.cell.average",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40115,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.current",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40116,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.current.charge.max",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40117,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.current.discharge.max",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40118,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40119,
+        "numberOfRegisters": 1,
+        "name": "measure.request.inverter",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "no request",
+            "1": "start",
+            "2": "stop"
+        }
+    },
+    {
+        "address": 40120,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.setpoint",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40121,
+        "numberOfRegisters": 1,
+        "name": "control.ports.port1.contactor",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "1": "close",
+            "2": "open"
+        }
+    },
+    {
+        "address": 40121,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.contactor",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "1": "closed",
+            "2": "open",
+            "default": "unknown"
+        }
+    },
+    {
+        "address": 40122,
+        "numberOfRegisters": 1,
+        "name": "control.state.inverter",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "1": "stop",
+            "2": "standby",
+            "3": "start"
+        }
+    },
+    {
+        "address": 40122,
+        "numberOfRegisters": 1,
+        "name": "measure.state.inverter",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "1": "stop",
+            "2": "standby",
+            "3": "start",
+            "default": "unknown"
+        }
+    },
+    {
+        "address": 40123,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.charge.capacity.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40124,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.energy.capacity.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40125,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.max.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40126,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.discharge.self.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40127,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.soc.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40128,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.dod.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40129,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.soh.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40130,
+        "numberOfRegisters": 1,
+        "name": "measure.voltage.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40131,
+        "numberOfRegisters": 1,
+        "name": "measure.voltage.cell.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40132,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.current.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40133,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.current.max.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40134,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.power.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40137,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.strings",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40138,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.strings.active",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40139,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.temperature.max",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40140,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.temperature.max.string",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40141,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.temperature.max.module",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40142,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.temperature.min",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40143,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.temperature.min.string",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40144,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.temperature.min.module",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40145,
+        "numberOfRegisters": 1,
+        "name": "measure.ports.port1.temperature",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40146,
+        "numberOfRegisters": 1,
+        "name": "measure.string.voltage.max",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40147,
+        "numberOfRegisters": 1,
+        "name": "measure.string.voltage.max.string",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40148,
+        "numberOfRegisters": 1,
+        "name": "measure.string.voltage.min",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40149,
+        "numberOfRegisters": 1,
+        "name": "measure.string.voltage.min.string",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40150,
+        "numberOfRegisters": 1,
+        "name": "measure.string.voltage.average",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40151,
+        "numberOfRegisters": 1,
+        "name": "measure.string.current.max",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40152,
+        "numberOfRegisters": 1,
+        "name": "measure.string.current.max.string",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40153,
+        "numberOfRegisters": 1,
+        "name": "measure.string.current.min",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40154,
+        "numberOfRegisters": 1,
+        "name": "measure.string.current.min.string",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40155,
+        "numberOfRegisters": 1,
+        "name": "measure.string.current.average",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40156,
+        "numberOfRegisters": 1,
+        "name": "measure.count.cells.balancing",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40158,
+        "numberOfRegisters": 1,
+        "name": "measure.temperature.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40159,
+        "numberOfRegisters": 1,
+        "name": "measure.string.current.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40160,
+        "numberOfRegisters": 1,
+        "name": "measure.string.soh.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40161,
+        "numberOfRegisters": 1,
+        "name": "measure.string.soc.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40162,
+        "numberOfRegisters": 1,
+        "name": "measure.string.voltage.SF",
+        "datatype": "int16",
+        "functionCode": 3
+    },
+    {
+        "address": 40163,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.modules.count",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40164,
+        "numberOfRegisters": 2,
+        "name": "measure.string1.status",
+        "datatype": "uint32",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "String enabled",
+            "1": "Contactor status"
+        }
+    },
+    {
+        "address": 40166,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.failure",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "No failure",
+            "1": "Button pushed",
+            "2": "String ground fault",
+            "3": "Outside voltage range",
+            "4": "String not enabled",
+            "5": "Fuse open",
+            "6": "Contactor failure",
+            "7": "Precharge failure",
+            "8": "String fault"
+        }
+    },
+    {
+        "address": 40167,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.soc",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40168,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.soh",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40169,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.current",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40170,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.voltage.cell.max",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40171,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.voltage.cell.max.module",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40172,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.voltage.cell.min",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40173,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.voltage.cell.min.module",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40174,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.voltage",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40175,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.temperature.max",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40176,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.temperature.max.module",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40177,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.temperature.min",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40178,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.temperature.min.module",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40179,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.temperature",
+        "datatype": "int16",
+        "functionCode": 3,
+        "scaling": 1.0
+    },
+    {
+        "address": 40180,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.disabled",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "0": "None",
+            "1": "Fault",
+            "2": "Maintenance",
+            "3": "External",
+            "4": "Other"
+        }
+    },
+    {
+        "address": 40181,
+        "numberOfRegisters": 2,
+        "name": "measure.string1.contactor",
+        "datatype": "uint32",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "Contactor 0",
+            "1": "Contactor 1",
+            "2": "Contactor 2",
+            "3": "Contactor 3",
+            "4": "Contactor 4",
+            "5": "Contactor 5",
+            "6": "Contactor 6",
+            "7": "Contactor 7",
+            "8": "Contactor 8",
+            "9": "Contactor 9",
+            "10": "Contactor 10",
+            "11": "Contactor 11",
+            "12": "Contactor 12",
+            "13": "Contactor 13",
+            "14": "Contactor 14",
+            "15": "Contactor 15",
+            "16": "Contactor 16",
+            "17": "Contactor 17",
+            "18": "Contactor 18",
+            "19": "Contactor 19",
+            "20": "Contactor 20",
+            "21": "Contactor 21",
+            "22": "Contactor 22",
+            "23": "Contactor 23",
+            "24": "Contactor 24",
+            "25": "Contactor 25",
+            "26": "Contactor 26",
+            "27": "Contactor 27",
+            "28": "Contactor 28",
+            "29": "Contactor 29",
+            "30": "Contactor 30"
+        }
+    },
+    {
+        "address": 40183,
+        "numberOfRegisters": 2,
+        "name": "measure.string1.event1",
+        "datatype": "uint32",
+        "functionCode": 3,
+        "map": {
+            "type": "bitwise",
+            "0": "Comm error",
+            "1": "Over temp alarm",
+            "2": "Over temp warning",
+            "3": "Under temp alarm",
+            "4": "Under temp warning",
+            "5": "Over charge current alarm",
+            "6": "Over charge current warning",
+            "7": "Over discharge current alarm",
+            "8": "Over discharge current warning",
+            "9": "Over voltage alarm",
+            "10": "Over voltage warning",
+            "11": "Under voltage alarm",
+            "12": "Under voltage warning",
+            "13": "Under SOC min alarm",
+            "14": "Under SOC min warning",
+            "15": "Over SOC max alarm",
+            "16": "Over SOC max warning",
+            "17": "Voltage imbalance warning",
+            "18": "Temp imbalance alarm",
+            "19": "Temp imbalance warning",
+            "20": "Contactor error",
+            "21": "Fan error",
+            "22": "Ground fault",
+            "23": "Open door error",
+            "24": "Reserverd 1",
+            "25": "Other alarm",
+            "26": "Other warning",
+            "27": "Reserved 2",
+            "28": "Config alarm",
+            "29": "Config warning"
+        }
+    },
+    {
+        "address": 40185,
+        "numberOfRegisters": 2,
+        "name": "measure.string1.event2",
+        "datatype": "uint32",
+        "functionCode": 3
+    },
+    {
+        "address": 40187,
+        "numberOfRegisters": 2,
+        "name": "measure.string1.event1.vendor",
+        "datatype": "uint32",
+        "functionCode": 3
+    },
+    {
+        "address": 40189,
+        "numberOfRegisters": 2,
+        "name": "measure.string1.event2.vendor",
+        "datatype": "uint32",
+        "functionCode": 3
+    },
+    {
+        "address": 40191,
+        "numberOfRegisters": 1,
+        "name": "control.string1.mode",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "1": "enable",
+            "2": "disable"
+        }
+    },
+    {
+        "address": 40191,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.mode",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "1": "enable",
+            "2": "disable",
+            "default": "Unknown"
+        }
+    },
+    {
+        "address": 40192,
+        "numberOfRegisters": 1,
+        "name": "control.string1.contactor",
+        "datatype": "uint16",
+        "functionCode": 6,
+        "map": {
+            "type": "value",
+            "1": "close",
+            "2": "open"
+        }
+    },
+    {
+        "address": 40192,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.contactor.setpoint",
+        "datatype": "uint16",
+        "functionCode": 3,
+        "map": {
+            "type": "value",
+            "1": "closed",
+            "2": "open",
+            "default": "Unknown"
+        }
+    },
+    {
+        "address": 40193,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.pad1",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "address": 40194,
+        "numberOfRegisters": 1,
+        "name": "measure.string1.pad2",
+        "datatype": "uint16",
+        "functionCode": 3
+    },
+    {
+        "name": "measure.ports.port1.power.charge.max",
+        "expression": "{measure.ports.port1.voltage} * {measure.ports.port1.current.charge.max}"
+    },
+    {
+        "name": "measure.ports.port1.power.discharge.max",
+        "expression": "{measure.ports.port1.voltage} * {measure.ports.port1.current.discharge.max}"
+    },
+    {
+        "name": "system.alarms",
+        "expression": "'alarm' in {measure.event1} or {measure.ports.port1.soc} > 99 or {measure.ports.port1.soc} < 1"
+    },
+    {
+        "name": "system.warnings",
+        "expression": "'warning' in {measure.event1} or {measure.ports.port1.soc} > 95 or {measure.ports.port1.soc} < 5"
+    },
+    {
+        "name": "warning.charge.full",
+        "expression": "{measure.ports.port1.soc} > 99"
+    },
+    {
+        "name": "warning.discharge.empty",
+        "expression": "{measure.ports.port1.soc} < 1"
+    },
+    {
+        "name": "warning.stop.charge.discharge",
+        "expression": "'Over temp alarm' in {measure.event1} or 'Under temp alarm' in {measure.event1} or 'Temp imbalance alarm' in {measure.event1}"
+    }
+]

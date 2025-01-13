@@ -1,0 +1,38 @@
+[
+    {
+        "name": "initialize",
+        "commands": "control.ports.port1.method = uncontrolled | control.ports.port2.method = voltage-droop | control.ports.port2.voltage = 350 | control.ports.port2.current.max = 60 | control.mode = auto | control.reconnectTimer.0 = 20"
+    },
+    {
+        "name": "start",
+        "commands": "control.enable = 1"
+    },
+    {
+        "name": "stop",
+        "commands": "control.disable = 1"
+    },
+    {
+        "name": "enable",
+        "commands": "control.enable = 1"
+    },
+    {
+        "name": "disable",
+        "commands": "control.disable = 1"
+    },
+    {
+        "name": "getMeasurements",
+        "commands": "measurements1? | measurements2? | measurements3? | measurements4?"
+    },
+    {
+        "name": "readFaultRegisters",
+        "commands": ""
+    },
+    {
+        "name": "failSafe",
+        "commands": ""
+    },
+    {
+        "name": "resetFault",
+        "commands": "control.fault.reset = 1"
+    }
+]

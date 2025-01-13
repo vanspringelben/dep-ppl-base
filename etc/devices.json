@@ -1,0 +1,23 @@
+[
+    {
+        "id": "converter1",
+        "protocol": "Modbus TCP/IP",
+        "ipAddress": "192.168.1.20",
+        "port": 502,
+        "slaveId": 1,
+        "controlMap": "30C3_control",
+        "addressMap": "30C3_address_map",
+        "disabled": false,
+        "communicationInterval": 0.2
+    },
+    {
+        "id": "battery1",
+        "protocol": "Modbus TCP/IP",
+        "ipAddress": "192.168.1.21",
+        "port": 502,
+        "slaveId": 1,
+        "controlMap": "sunspec_control",
+        "addressMap": "sunspec_address_map",
+        "disabled": false
+    }
+]

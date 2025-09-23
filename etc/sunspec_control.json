@@ -1,6 +1,6 @@
 [
     {
         "name": "getMeasurements",
-        "commands": "measurements1? | measurements2?"
+        "commands": "measurements1?"
     }
 ]

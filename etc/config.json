@@ -14,7 +14,9 @@
         "botToken": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     },
     "nats": {
-        "localUsername": "client",
-        "localPassword": "xxxxxxxx"
+        "local": {
+            "username": "client",
+            "password": "xxxxxxxx"
+        }
     }
 }

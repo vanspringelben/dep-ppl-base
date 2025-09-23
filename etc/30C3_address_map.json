@@ -23,11 +23,7 @@
         "name": "measurements1",
         "datatype": "int16",
         "functionCode": 3,
-        "multiReadRegisters": ["fault.active.0", "fault.active.1", "fault.active.2", "fault.active.3", "fault.occurred.0", "fault.occurred.1","fault.occurred.2", "fault.occurred.3", 
-        "measure.watchdog", "measure.ports.port1.method", "measure.ports.port1.power.ramp", "measure.ports.port1.throttle", "measure.ports.port1.power.setpoint", "measure.ports.port1.power.reactive.setpoint", 
-        "measure.ports.port1.power.factor.setpoint", "measure.ports.port1.frequency.setpoint", "measure.ports.port1.reactive.compensation", "measure.ports.port1.frequency.offset", 
-        "measure.ports.port1.power.export.max", "measure.ports.port1.power.import.max", "measure.ports.port1.gridforming", "measure.ports.port1.current", "measure.ports.port1.voltage", 
-        "measure.ports.port2.method", "measure.ports.port2.throttle", "measure.ports.port2.current.setpoint", "measure.ports.port2.power.setpoint", "measure.ports.port2.voltage.setpoint"]
+        "multiRead": true
     },
     {     
         "address": 141,
@@ -35,9 +31,7 @@
         "name": "measurements2",
         "datatype": "int16",
         "functionCode": 3,      
-        "multiReadRegisters": ["measure.ports.port2.voltage.offset", "measure.ports.port2.power.import.max", "measure.ports.port2.power.export.max", "measure.ports.port3.method", "measure.ports.port3.throttle", 
-        "measure.ports.port3.current.setpoint", "measure.ports.port3.power.setpoint", "measure.ports.port3.voltage.setpoint", "measure.ports.port3.voltage.offset", "measure.ports.port3.power.import.max", 
-        "measure.ports.port3.power.export.max", "measure.ports.port3.mppt.restartTimer", "measure.reconnectTimer.0.setpoint", "measure.reconnectTimer.1.setpoint", "measure.reconnectTimer.2.setpoint"]
+        "multiRead": true
     },
     {     
         "address": 266,
@@ -45,7 +39,7 @@
         "name": "measurements3",
         "datatype": "int16",
         "functionCode": 3,
-        "multiReadRegisters": ["measure.mode", "measure.precharge.voltage.high", "measure.precharge.voltage.low", "measure.reconnectTimer.0", "measure.reconnectTimer.1", "measure.reconnectTimer.2"]
+        "multiRead": true
     },
     {     
         "address": 834,
@@ -53,12 +47,7 @@
         "name": "measurements4",
         "datatype": "int16",
         "functionCode": 3,
-        "multiReadRegisters": ["measure.ports.port1.frequency", "measure.ports.port1.voltage.ab", "measure.ports.port1.voltage.bc", "measure.ports.port1.voltage.ca", "measure.ports.port1.voltage.a",
-        "measure.ports.port1.voltage.b", "measure.ports.port1.voltage.c", "measure.ports.port1.current.a", "measure.ports.port1.current.b", "measure.ports.port1.current.c", "measure.ports.port1.power",
-        "measure.ports.port1.power.reactive", "measure.ports.port1.power.apparent", "measure.ports.port1.power.factor", "status.ports.port1", "measure.ports.port2.voltage", "measure.ports.port2.current",
-        "measure.ports.port2.power", "status.ports.port2", "measure.ports.port3.voltage", "measure.ports.port3.current", "measure.ports.port3.power", "status.ports.port3", "measure.temperature.filtered.onboard",
-        "measure.temperature.filtered.dc", "measure.temperature.filtered.ac", "measure.fan.pwm.setpoint", "measure.fan.tach", "measure.fan.status", "status.general", "measure.diagnostic.status", 
-        "measure.grid.support.status", "measure.grid.level.status", "measure.grid.stop.status", "measure.fault.id.last"]
+        "multiRead": true
     },
     {
         "address": 16,
@@ -533,7 +522,7 @@
         "name": "measure.ports.port1.current",
         "datatype": "int16",
         "functionCode": 3,
-        "scaling": -0.1,
+        "scaling": 0.1,
         "offset": 0.0
     },
     {
@@ -1223,7 +1212,7 @@
         "name": "measure.ports.port1.current.a",
         "datatype": "int16",
         "functionCode": 3,
-        "scaling": -0.1,
+        "scaling": 0.1,
         "offset": 0.0
     },
     {
@@ -1232,7 +1221,7 @@
         "name": "measure.ports.port1.current.b",
         "datatype": "int16",
         "functionCode": 3,
-        "scaling": -0.1,
+        "scaling": 0.1,
         "offset": 0.0
     },
     {
@@ -1241,7 +1230,7 @@
         "name": "measure.ports.port1.current.c",
         "datatype": "int16",
         "functionCode": 3,
-        "scaling": -0.1,
+        "scaling": 0.1,
         "offset": 0.0
     },
     {
@@ -1389,7 +1378,7 @@
     {
         "address": 863,
         "numberOfRegisters": 1,
-        "name": "measure.temperature.filtered.onboard",
+        "name": "measure.temperature.ambient",
         "datatype": "int16",
         "functionCode": 3,
         "scaling": 0.125,
@@ -1398,7 +1387,7 @@
     {
         "address": 864,
         "numberOfRegisters": 1,
-        "name": "measure.temperature.filtered.dc",
+        "name": "measure.temperature.dc",
         "datatype": "int16",
         "functionCode": 3,
         "scaling": 0.125,
@@ -1407,7 +1396,7 @@
     {
         "address": 865,
         "numberOfRegisters": 1,
-        "name": "measure.temperature.filtered.ac",
+        "name": "measure.temperature.ac",
         "datatype": "int16",
         "functionCode": 3,
         "scaling": 0.125,

@@ -1,6 +1,7 @@
 [
     {
         "id": "converter1",
+        "type": "converter",
         "protocol": "Modbus TCP/IP",
         "ipAddress": "192.168.1.20",
         "port": 502,
@@ -12,6 +13,7 @@
     },
     {
         "id": "battery1",
+        "type": "battery",
         "protocol": "Modbus TCP/IP",
         "ipAddress": "192.168.1.21",
         "port": 502,

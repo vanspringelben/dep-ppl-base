@@ -5,21 +5,7 @@
         "functionCode": 3,
         "numberOfRegisters": 125,
         "address": 40073,
-        "multiReadRegisters": ["measure.ports.port1.charge.capacity", "measure.ports.port1.energy.capacity", "measure.ports.port1.power.charge.max.rated", "measure.ports.port1.power.discharge.max.rated", "measure.ports.port1.power.discharge.self", 
-        "measure.ports.port1.soc.max", "measure.ports.port1.soc.min", "measure.ports.port1.soc.max.reserve", "measure.ports.port1.soc.min.reserve", "measure.ports.port1.soc", "measure.ports.port1.dod", "measure.ports.port1.soh", "measure.cycles.count", 
-        "measure.charge.status", "measure.mode", "measure.heartbeat", "measure.battery.type", "measure.status", "measure.status.vendor", "measure.event1", "measure.event2", "measure.event1.vendor", "measure.event2.vendor", "measure.ports.port1.voltage", 
-        "measure.ports.port1.voltage.max", "measure.ports.port1.voltage.min", "measure.voltage.cell.max", "measure.voltage.cell.max.string", "measure.voltage.cell.max.module", "measure.voltage.cell.min", "measure.voltage.cell.min.string", 
-        "measure.voltage.cell.min.module", "measure.voltage.cell.average", "measure.ports.port1.current", "measure.ports.port1.current.charge.max", "measure.ports.port1.current.discharge.max", "measure.ports.port1.power", "measure.request.inverter", 
-        "measure.ports.port1.power.setpoint", "measure.ports.port1.contactor", "measure.state.inverter", "measure.ports.port1.charge.capacity.SF", "measure.ports.port1.energy.capacity.SF", "measure.ports.port1.power.max.SF", "measure.ports.port1.power.discharge.self.SF", 
-        "measure.ports.port1.soc.SF", "measure.ports.port1.dod.SF", "measure.ports.port1.soh.SF", "measure.voltage.SF", "measure.voltage.cell.SF", "measure.ports.port1.current.SF", "measure.ports.port1.current.max.SF", "measure.ports.port1.power.SF",
-        "measure.ports.port1.strings", "measure.ports.port1.strings.active", "measure.ports.port1.temperature.max", "measure.ports.port1.temperature.max.string", "measure.ports.port1.temperature.max.module", "measure.ports.port1.temperature.min", 
-        "measure.ports.port1.temperature.min.string", "measure.ports.port1.temperature.min.module", "measure.ports.port1.temperature", "measure.string.voltage.max", "measure.string.voltage.max.string", "measure.string.voltage.min", "measure.string.voltage.min.string", 
-        "measure.string.voltage.average", "measure.string.current.max", "measure.string.current.max.string", "measure.string.current.min", "measure.string.current.min.string", "measure.string.current.average", "measure.count.cells.balancing", "measure.temperature.SF", 
-        "measure.string.current.SF", "measure.string.soh.SF", "measure.string.soc.SF", "measure.string.voltage.SF", "measure.string1.modules.count", "measure.string1.status", "measure.string1.failure", "measure.string1.soc", "measure.string1.soh", 
-        "measure.string1.current", "measure.string1.voltage.cell.max", "measure.string1.voltage.cell.max.module", "measure.string1.voltage.cell.min", "measure.string1.voltage.cell.min.module", "measure.string1.voltage", "measure.string1.temperature.max", 
-        "measure.string1.temperature.max.module", "measure.string1.temperature.min", "measure.string1.temperature.min.module", "measure.string1.temperature", "measure.string1.disabled", "measure.string1.contactor", "measure.string1.event1", "measure.string1.event2", 
-        "measure.string1.event1.vendor", "measure.string1.event2.vendor", "measure.string1.mode", "measure.string1.contactor.setpoint", "measure.string1.pad1", "measure.string1.pad2", "measure.ports.port1.power.charge.max", "measure.ports.port1.power.discharge.max",
-        "system.alarms", "system.warnings", "warning.charge.full", "warning.discharge.empty", "warning.stop.charge.discharge"]
+        "multiRead": true
     },
     {
         "address": 40073,

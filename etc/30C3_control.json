@@ -1,7 +1,7 @@
 [
     {
         "name": "initialize",
-        "commands": "control.ports.port1.method = uncontrolled | control.ports.port2.method = voltage-droop | control.ports.port2.voltage = 350 | control.ports.port2.current.max = 60 | control.mode = auto | control.reconnectTimer.0 = 20"
+        "commands": "control.ports.port1.method = net | control.ports.port2.method = voltage-droop | control.ports.port2.voltage = 350 | control.ports.port2.current.max = 60 | control.mode = auto | control.reconnectTimer.0 = 20"
     },
     {
         "name": "start",

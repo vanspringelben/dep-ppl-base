@@ -1,12 +1,12 @@
 {
     "plcnext": {
-        "ipAddress": "192.168.1.10",
+        "ipAddress": "192.168.0.130",
         "username": "admin",
-        "password": "xxxxxxxx"
+        "password": "a44daeff"
     },
     "mqtt": {
         "broker": {
-            "ipAddress": "192.168.1.10"
+            "ipAddress": "192.168.0.130"
         }
     },
     "telegram": {
@@ -16,7 +16,7 @@
     "nats": {
         "local": {
             "username": "client",
-            "password": "xxxxxxxx"
+            "password": "a44daeff"
         }
     }
 }
